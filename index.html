@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CozyPaws — Everything Your Pets Love</title>
+<meta name="description" content="CozyPaws: comida, juguetes y accesorios curados para tu mascota. Elegido por mascotas, aprobado por sus humanos.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="viewport-shell">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header animate-fade-in delay-100">
+  <div class="header-inner">
+    <a href="#home" class="logo" aria-label="CozyPaws home">
+      <img src="https://polo-pecan-73837341.figma.site/_assets/v11/0ae29d6d9628bede667f90d57bebe81b8f1ec2bf.svg" alt="CozyPaws" class="logo-img">
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#home" class="nav-link nav-link--active">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#delivery">Delivery and payment</a>
+      <a href="#brands">Brands</a>
+      <a href="#blog">Blog</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn icon-btn--search" aria-label="Search">
+        <i data-lucide="search"></i>
+      </button>
+      <button class="icon-btn icon-btn--fav" aria-label="Favorites">
+        <i data-lucide="star"></i>
+        <span class="badge">4</span>
+      </button>
+      <button class="icon-btn icon-btn--cart" aria-label="Cart">
+        <i data-lucide="shopping-cart"></i>
+        <span class="badge">1</span>
+      </button>
+      <button class="avatar-btn" aria-label="Account">
+        <img src="https://polo-pecan-73837341.figma.site/_assets/v11/e62173d41f91350a59628e8a9a55ae078a886fb9.png?w=128" alt="">
+      </button>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#delivery">Delivery and payment</a>
+    <a href="#brands">Brands</a>
+    <a href="#blog">Blog</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+
+  <div class="hero-top">
+  <!-- Text layer -->
+  <div class="hero-text">
+    <h1 class="hero-heading">
+      <span class="hero-line">
+        <span class="word animate-word-pop delay-200">Everything</span>
+      </span>
+      <span class="hero-line"><span class="word animate-word-pop delay-300">Your</span><span class="word animate-word-pop delay-400">Pets</span><span class="word animate-word-pop delay-500">Love</span></span>
+    </h1>
+    <p class="hero-subtitle animate-fade-up delay-600">Curated food, toys &amp; gear — sniffed, tasted and approved by real pets.</p>
+    <a href="#shop" class="btn btn--primary hero-cta animate-fade-up delay-700">
+      Explore Products
+      <i data-lucide="arrow-right"></i>
+    </a>
+  </div>
+
+  <!-- Left product card -->
+  <div class="hero-card hero-card--left animate-slide-in-left delay-600">
+    <div class="hero-card-img">
+      <img src="https://polo-pecan-73837341.figma.site/_assets/v11/3e5158dad63d392ade022e81890edc9f54d750bc.png" alt="Cozy Cat House">
+      <button class="arrow-fab" aria-label="View product"><i data-lucide="arrow-up-right"></i></button>
+    </div>
+    <p class="hero-card-title">Cozy Cat House</p>
+    <p class="hero-card-price">$49.99</p>
+  </div>
+
+  <!-- Right video card -->
+  <div class="hero-card hero-card--right animate-slide-in-right delay-600">
+    <div class="hero-card-img hero-card-img--video">
+      <img src="https://polo-pecan-73837341.figma.site/_assets/v11/76be6ec3a93a703b15e9cc01e764a4e3f9d7d2c0.png" alt="Product reviews video">
+      <button class="play-fab" aria-label="Play video"><i data-lucide="play"></i></button>
+    </div>
+    <p class="hero-card-caption">Watch Product Reviews on TikTok and YouTube</p>
+  </div>
+
+  <!-- Mobile top block -->
+  <div class="hero-mobile-top">
+    <h1 class="hero-heading hero-heading--mobile animate-text-reveal delay-200">Everything<br>Your Pets Love</h1>
+    <p class="hero-subtitle animate-fade-up delay-400">Curated food, toys &amp; gear for happy pets.</p>
+    <a href="#shop" class="btn btn--primary animate-fade-up delay-500">
+      Explore Products <i data-lucide="arrow-right"></i>
+    </a>
+  </div>
+
+  <div class="hero-mobile-cards animate-fade-up delay-600">
+    <div class="hero-card hero-card--mobile">
+      <div class="hero-card-img">
+        <img src="https://polo-pecan-73837341.figma.site/_assets/v11/3e5158dad63d392ade022e81890edc9f54d750bc.png" alt="Cozy Cat House">
+        <button class="arrow-fab arrow-fab--sm" aria-label="View product"><i data-lucide="arrow-up-right"></i></button>
+      </div>
+      <p class="hero-card-title">Cozy Cat House</p>
+      <p class="hero-card-price">$49.99</p>
+    </div>
+    <div class="hero-card hero-card--mobile">
+      <div class="hero-card-img hero-card-img--video">
+        <img src="https://polo-pecan-73837341.figma.site/_assets/v11/76be6ec3a93a703b15e9cc01e764a4e3f9d7d2c0.png" alt="Product reviews video">
+        <button class="play-fab play-fab--sm" aria-label="Play video"><i data-lucide="play"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-mobile-stats animate-fade-up delay-700">
+    <div class="stat-avatars">
+      <span class="mini-avatar" style="--c:#F2B5A0">SM</span>
+      <span class="mini-avatar" style="--c:#A0D8B3">JR</span>
+      <span class="mini-avatar" style="--c:#F6D186">TK</span>
+      <span class="mini-avatar mini-avatar--plus"><i data-lucide="plus"></i></span>
+    </div>
+    <span class="stat-label">98K+ happy pets</span>
+    <span class="stat-divider"></span>
+    <span class="stat-rating"><i data-lucide="star" class="star-icon"></i>4.6</span>
+  </div>
+  </div><!-- /.hero-top -->
+
+  <!-- Bottom 3 images -->
+  <div class="hero-bottom">
+    <div class="hero-photo hero-photo--left animate-photo-reveal delay-700">
+      <img src="https://polo-pecan-73837341.figma.site/_assets/v11/8d44b25186ef45a5789c74668fb781cea4e1ff49.png" alt="Happy pet owners">
+      <div class="photo-overlay photo-overlay--left animate-scale-in delay-1000">
+        <div class="stat-avatars">
+          <span class="mini-avatar" style="--c:#F2B5A0">SM</span>
+          <span class="mini-avatar" style="--c:#A0D8B3">JR</span>
+          <span class="mini-avatar mini-avatar--plus"><i data-lucide="plus"></i></span>
+        </div>
+        <span class="stat-number">98K+</span>
+      </div>
+    </div>
+
+    <div class="hero-photo hero-photo--center animate-photo-reveal delay-600">
+      <img src="https://polo-pecan-73837341.figma.site/_assets/v11/96745c4e72ad5c5208e53a885df797fd82cd854a.png?h=1024" alt="Best products for your pet">
+      <div class="photo-overlay photo-overlay--center animate-scale-in delay-1100">
+        <h2 class="overlay-heading">Best Products for Your Pet</h2>
+        <a href="#shop" class="btn btn--pill">Explore Products <i data-lucide="arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-photo hero-photo--right animate-photo-reveal delay-800">
+      <img src="https://polo-pecan-73837341.figma.site/_assets/v11/81bd2e7a66b58f3d8f3ad78fd1ebf01af8dfdee1.png" alt="Pet with toy">
+      <div class="photo-overlay photo-overlay--right animate-scale-in delay-1200">
+        <i data-lucide="star" class="star-icon star-icon--filled"></i>
+        <span class="stat-number">4.6</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /.viewport-shell -->
+
+<!-- paw trail divider -->
+<div class="paw-trail" data-reveal></div>
+
+<!-- ============ SHOP BY PET ============ -->
+<section class="section shop-by-pet" id="shop">
+  <div class="container">
+    <span class="eyebrow" data-reveal>Shop by pet</span>
+    <h2 class="section-heading" data-reveal>Find their favorite aisle</h2>
+    <p class="section-copy" data-reveal>Every species has different taste. We keep the good stuff sorted so you don't have to dig.</p>
+
+    <div class="pet-grid">
+      <a href="#" class="pet-card" data-reveal>
+        <span class="pet-card-badge" style="--badge:#1a3d1a">
+          <svg viewBox="0 0 48 48" class="pet-icon"><path d="M14 20c3 0 5-3 5-6s-2-6-5-6-5 3-5 6 2 6 5 6zm20 0c3 0 5-3 5-6s-2-6-5-6-5 3-5 6 2 6 5 6zM8 30c2.5 0 4.5-2.5 4.5-5.5S10.5 19 8 19s-4.5 2.5-4.5 5.5S5.5 30 8 30zm32 0c2.5 0 4.5-2.5 4.5-5.5S42.5 19 40 19s-4.5 2.5-4.5 5.5S37.5 30 40 30zM24 22c-6 0-13 5.5-13 12.5S16.5 42 24 42s13-3 13-7.5S30 22 24 22z"/></svg>
+        </span>
+        <span class="pet-card-name">Dogs</span>
+        <span class="pet-card-count">128 products</span>
+      </a>
+
+      <a href="#" class="pet-card" data-reveal>
+        <span class="pet-card-badge" style="--badge:#E86A10">
+          <svg viewBox="0 0 48 48" class="pet-icon"><path d="M13 8 8 18l8 3v3l-4 4v6l4-2 4 4h8l4-4 4 2v-6l-4-4v-3l8-3-5-10-9 5h-4l-9-5zm11 15c-6 0-11 4-11 9s5 8 11 8 11-3 11-8-5-9-11-9z"/></svg>
+        </span>
+        <span class="pet-card-name">Cats</span>
+        <span class="pet-card-count">96 products</span>
+      </a>
+
+      <a href="#" class="pet-card" data-reveal>
+        <span class="pet-card-badge" style="--badge:#2a5a2a">
+          <svg viewBox="0 0 48 48" class="pet-icon"><ellipse cx="24" cy="28" rx="14" ry="12"/><ellipse cx="14" cy="14" rx="5" ry="8" transform="rotate(-20 14 14)"/><ellipse cx="34" cy="14" rx="5" ry="8" transform="rotate(20 34 14)"/></svg>
+        </span>
+        <span class="pet-card-name">Small Pets</span>
+        <span class="pet-card-count">54 products</span>
+      </a>
+
+      <a href="#" class="pet-card" data-reveal>
+        <span class="pet-card-badge" style="--badge:#d45e0d">
+          <svg viewBox="0 0 48 48" class="pet-icon"><path d="M24 6c9 0 16 6 16 14 0 6-4 9-8 10l4 12-9-7-2 1-2-1-9 7 4-12c-4-1-8-4-8-10C10 12 17 6 24 6z"/></svg>
+        </span>
+        <span class="pet-card-name">Birds</span>
+        <span class="pet-card-count">37 products</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="paw-trail" data-reveal></div>
+
+<!-- ============ BESTSELLERS ============ -->
+<section class="section bestsellers" id="products">
+  <div class="container">
+    <div class="section-head-row">
+      <div>
+        <span class="eyebrow" data-reveal>Bestsellers</span>
+        <h2 class="section-heading" data-reveal>Picked by pets, restocked weekly</h2>
+      </div>
+      <a href="#" class="link-arrow" data-reveal>View all <i data-lucide="arrow-right"></i></a>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card" data-reveal>
+        <div class="product-card-img">
+          <img src="https://polo-pecan-73837341.figma.site/_assets/v11/3e5158dad63d392ade022e81890edc9f54d750bc.png" alt="Cozy Cat House">
+          <button class="arrow-fab arrow-fab--sm" aria-label="View product"><i data-lucide="arrow-up-right"></i></button>
+        </div>
+        <p class="product-name">Cozy Cat House</p>
+        <p class="product-price">$49.99</p>
+      </div>
+
+      <div class="product-card product-card--illustrated" data-reveal style="--tile:#FDEEE2">
+        <div class="product-card-img product-card-img--illustrated">
+          <svg viewBox="0 0 96 96" class="product-illustration"><circle cx="48" cy="48" r="34" fill="#E86A10" opacity=".12"/><path d="M28 40h40a4 4 0 0 1 4 4c0 12-10 20-22 20S28 56 28 44a4 4 0 0 1 4-4z" fill="#1a3d1a"/><rect x="42" y="26" width="12" height="14" rx="6" fill="#1a3d1a"/></svg>
+          <button class="arrow-fab arrow-fab--sm" aria-label="View product"><i data-lucide="arrow-up-right"></i></button>
+        </div>
+        <p class="product-name">Orchard Leather Leash</p>
+        <p class="product-price">$28.00</p>
+      </div>
+
+      <div class="product-card product-card--illustrated" data-reveal style="--tile:#D9F5DB">
+        <div class="product-card-img product-card-img--illustrated">
+          <svg viewBox="0 0 96 96" class="product-illustration"><circle cx="48" cy="48" r="34" fill="#1a3d1a" opacity=".1"/><path d="M48 20c4 8 16 10 16 22a16 16 0 1 1-32 0c0-12 12-14 16-22z" fill="#E86A10"/><circle cx="48" cy="50" r="5" fill="#fff"/></svg>
+          <button class="arrow-fab arrow-fab--sm" aria-label="View product"><i data-lucide="arrow-up-right"></i></button>
+        </div>
+        <p class="product-name">Feather Wand Toy</p>
+        <p class="product-price">$14.50</p>
+      </div>
+
+      <div class="product-card product-card--illustrated" data-reveal style="--tile:#EFFDF0">
+        <div class="product-card-img product-card-img--illustrated">
+          <svg viewBox="0 0 96 96" class="product-illustration"><circle cx="48" cy="48" r="34" fill="#2a5a2a" opacity=".1"/><ellipse cx="48" cy="58" rx="26" ry="10" fill="#1a3d1a"/><ellipse cx="48" cy="50" rx="20" ry="8" fill="#E86A10"/></svg>
+          <button class="arrow-fab arrow-fab--sm" aria-label="View product"><i data-lucide="arrow-up-right"></i></button>
+        </div>
+        <p class="product-name">Ceramic Slow-Feed Bowl</p>
+        <p class="product-price">$19.99</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="paw-trail" data-reveal></div>
+
+<!-- ============ WHY COZYPAWS ============ -->
+<section class="section trust-strip">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item" data-reveal>
+        <i data-lucide="truck"></i>
+        <p class="trust-title">Free shipping</p>
+        <p class="trust-copy">On every order over $35</p>
+      </div>
+      <div class="trust-item" data-reveal>
+        <i data-lucide="shield-check"></i>
+        <p class="trust-title">Vet-approved</p>
+        <p class="trust-copy">Every product reviewed by a vet</p>
+      </div>
+      <div class="trust-item" data-reveal>
+        <i data-lucide="message-circle"></i>
+        <p class="trust-title">24/7 support</p>
+        <p class="trust-copy">Real humans, real fast replies</p>
+      </div>
+      <div class="trust-item" data-reveal>
+        <i data-lucide="rotate-ccw"></i>
+        <p class="trust-title">Easy returns</p>
+        <p class="trust-copy">30 days, no questions asked</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="paw-trail" data-reveal></div>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials">
+  <div class="container">
+    <span class="eyebrow" data-reveal>Loved by pet parents</span>
+    <h2 class="section-heading" data-reveal>98K+ tails wagging</h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card" data-reveal>
+        <div class="stars">
+          <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+        </div>
+        <p class="testimonial-quote">The cat house lasted through two very determined cats. Still holding up, still stylish.</p>
+        <div class="testimonial-author">
+          <span class="mini-avatar" style="--c:#F2B5A0">SM</span>
+          <div>
+            <p class="author-name">Sofia M.</p>
+            <p class="author-pet">Cat mom, Tegucigalpa</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-reveal>
+        <div class="stars">
+          <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+        </div>
+        <p class="testimonial-quote">Delivery was faster than my own grocery order. My dog approved of the leash before I did.</p>
+        <div class="testimonial-author">
+          <span class="mini-avatar" style="--c:#A0D8B3">JR</span>
+          <div>
+            <p class="author-name">Javier R.</p>
+            <p class="author-pet">Dog dad, San Pedro Sula</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-reveal>
+        <div class="stars">
+          <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+        </div>
+        <p class="testimonial-quote">Finally a slow-feed bowl my hamster can't flip over. Small pets deserve nice things too.</p>
+        <div class="testimonial-author">
+          <span class="mini-avatar" style="--c:#F6D186">TK</span>
+          <div>
+            <p class="author-name">Tatiana K.</p>
+            <p class="author-pet">Small pet parent, Comayagua</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="paw-trail" data-reveal></div>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="section newsletter">
+  <div class="container newsletter-inner">
+    <div>
+      <h2 class="section-heading section-heading--light" data-reveal>Get treats &amp; tips in your inbox</h2>
+      <p class="section-copy section-copy--light" data-reveal>New arrivals, seasonal care guides, and the occasional 10% off — once or twice a month, never more.</p>
+    </div>
+    <form class="newsletter-form" id="newsletterForm" data-reveal>
+      <label for="newsletterEmail" class="sr-only">Email address</label>
+      <input type="email" id="newsletterEmail" placeholder="you@email.com" required>
+      <button type="submit" class="btn btn--primary">
+        Subscribe <i data-lucide="mail"></i>
+      </button>
+    </form>
+    <p class="newsletter-note" id="newsletterNote" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="https://polo-pecan-73837341.figma.site/_assets/v11/0ae29d6d9628bede667f90d57bebe81b8f1ec2bf.svg" alt="CozyPaws" class="footer-logo">
+      <p>Everything your pets love, delivered with a wagging tail.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Shop</p>
+      <a href="#">Dogs</a>
+      <a href="#">Cats</a>
+      <a href="#">Small Pets</a>
+      <a href="#">Birds</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Company</p>
+      <a href="#">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#brands">Brands</a>
+      <a href="#delivery">Delivery and payment</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Help</p>
+      <a href="#">Contact</a>
+      <a href="#">Track order</a>
+      <a href="#">Returns</a>
+      <a href="#">FAQ</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CozyPaws. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
