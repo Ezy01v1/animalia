@@ -207,7 +207,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .logo { display: flex; align-items: center; gap: 0.6rem; }
-.logo-img { height: 42px; width: auto; }
+.logo-img { height: 165px; width: auto; }
 .logo-text {
   display: none;
   font-family: 'DM Serif Display', serif;
@@ -486,14 +486,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .photo-overlay--center {
   left: 50%; transform: translateX(-50%);
   flex-direction: column; align-items: center; text-align: center; gap: 0.75rem;
-  width: min(90%, 26rem);
+  width: min(92%, 22rem);
+  padding: 0 0.25rem;
+  box-sizing: border-box;
 }
 .stat-number { font-weight: 700; font-size: clamp(0.95rem, 1.6vw, 1.3rem); }
 .overlay-heading {
   font-family: 'DM Serif Display', serif;
-  font-size: clamp(1.2rem, 2.8vw, 2rem);
+  font-size: clamp(1.1rem, 2.2vw, 1.7rem);
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.15;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
 }
 .star-icon--filled { width: 18px; height: 18px; }
 
