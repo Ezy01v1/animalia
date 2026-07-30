@@ -25,168 +25,51 @@
     </a>
 
     <nav class="main-nav" aria-label="Principal">
-      <a href="#home" class="nav-link nav-link--active">Inicio</a>
-      <a href="#shop">Tienda</a>
-      <a href="#citas">Citas de corte</a>
-      <a href="#faq">Preguntas frecuentes</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+      <!DOCTYPE html>
+      <html lang="es">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agroveterinaria Animalia — Todo para tu mascota y tu finca</title>
+        <meta name="description" content="Agroveterinaria Animalia: alimento, accesorios y cuidado para tu mascota, equipo agrícola ECHO y Shindaiwa, y citas de corte y aseo.">
 
-    <div class="header-actions">
-      <a href="#contacto" class="btn btn--primary header-cta">
-        <i data-lucide="phone"></i>
-        Contáctanos
-      </a>
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <i data-lucide="menu"></i>
-      </button>
-    </div>
-  </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
-  <div class="mobile-nav" id="mobileNav">
-    <a href="#home">Inicio</a>
-    <a href="#shop">Tienda</a>
-    <a href="#citas">Citas de corte</a>
-    <a href="#faq">Preguntas frecuentes</a>
-    <a href="#contacto">Contacto</a>
-  </div>
-</header>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script id="tailwind-config">
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  primary: '#1a3d1a',
+                  'primary-deep': '#032707',
+                  'brand-orange': '#E86A10',
+                  'brand-orange-dark': '#d45e0d',
+                  mint: '#ceead0',
+                  'mint-light': '#e3f5e2',
+                  peach: '#efe0d4',
+                  bg: '#f9faf4',
+                  'surface-low': '#f4f4ee',
+                  'surface-high': '#e9ebe2',
+                  ink: '#1a1c19',
+                  'ink-muted': '#4a544a',
+                },
+                borderRadius: { DEFAULT: '1rem', lg: '1.5rem', xl: '2.5rem', full: '9999px' },
+                fontFamily: {
+                  serif: ['"Libre Caslon Text"', 'serif'],
+                  sans: ['Inter', 'sans-serif'],
+                },
+              }
+            }
+          }
+        </script>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="home">
+        <link rel="stylesheet" href="styles.css">
+      </head>
 
-  <div class="hero-top">
-  <!-- Text layer -->
-  <div class="hero-text">
-    <h1 class="hero-heading">
-      <span class="hero-line">
-        <span class="word animate-word-pop delay-200">Todo</span>
-        <span class="word animate-word-pop delay-300">para</span>
-      </span>
-      <span class="hero-line"><span class="word animate-word-pop delay-400">tu</span><span class="word animate-word-pop delay-500">mascota</span><span class="word animate-word-pop delay-600">y</span><span class="word animate-word-pop delay-700">tu</span><span class="word animate-word-pop delay-800">finca</span></span>
-    </h1>
-    <p class="hero-subtitle animate-fade-up delay-600">Alimento, accesorios y cuidado para tus mascotas — más equipo agrícola y de jardín de las marcas en las que confían los profesionales.</p>
-    <a href="#shop" class="btn btn--primary hero-cta animate-fade-up delay-700">
-      Ver tienda
-      <i data-lucide="arrow-right"></i>
-    </a>
-  </div>
-
-  <!--carta de productos-->
-  <div class="hero-card hero-card--left animate-slide-in-left delay-600">
-    <div class="hero-card-img">
-      <img src="img/PerritoRandom.jpg" alt="Perro feliz — foto genérica de referencia">
-      <button class="arrow-fab" aria-label="Ver producto"><i data-lucide="arrow-up-right"></i></button>
-    </div>
-    <p class="hero-card-title">Cuidado y cariño para tu mejor amigo</p>
-    <p class="hero-card-price">Visítanos en tienda</p>
-  </div>
-
-  <!-- Right card -->
-  <div class="hero-card hero-card--right animate-slide-in-right delay-600">
-    <div class="hero-card-img hero-card-img--video">
-      <img src="img/Sierramoto.JPG" alt="Fumigadora Shindaiwa en uso">
-      <button class="play-fab" aria-label="Ver equipo agrícola"><i data-lucide="tractor"></i></button>
-    </div>
-    <p class="hero-card-caption">Equipo agrícola y de jardín ECHO y Shindaiwa</p>
-  </div>
-
-  <!-- Mobile top block -->
-  <div class="hero-mobile-top">
-    <h1 class="hero-heading hero-heading--mobile animate-text-reveal delay-200">Todo para<br>tu mascota y tu finca</h1>
-    <p class="hero-subtitle animate-fade-up delay-400">Cuidado de mascotas y equipo agrícola en un solo lugar.</p>
-    <a href="#shop" class="btn btn--primary animate-fade-up delay-500">
-      Ver tienda <i data-lucide="arrow-right"></i>
-    </a>
-  </div>
-
-  <div class="hero-mobile-cards animate-fade-up delay-600">
-    <div class="hero-card hero-card--mobile">
-      <div class="hero-card-img">
-        <img src="img/PerritoRandom.jpg" alt="Perro feliz — foto genérica de referencia">
-        <button class="arrow-fab arrow-fab--sm" aria-label="Ver producto"><i data-lucide="arrow-up-right"></i></button>
-      </div>
-      <p class="hero-card-title">Cuidado para tu mascota</p>
-    </div>
-    <div class="hero-card hero-card--mobile">
-      <div class="hero-card-img hero-card-img--video">
-        <img src="img/shop-fumigadora-shindaiwa.jpg" alt="Fumigadora Shindaiwa">
-        <button class="play-fab play-fab--sm" aria-label="Ver equipo agrícola"><i data-lucide="tractor"></i></button>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-mobile-stats animate-fade-up delay-700">
-    <div class="stat-avatars">
-      <span class="mini-avatar" style="--c:#F2B5A0">SM</span>
-      <span class="mini-avatar" style="--c:#A0D8B3">JR</span>
-      <span class="mini-avatar" style="--c:#F6D186">TK</span>
-      <span class="mini-avatar mini-avatar--plus"><i data-lucide="plus"></i></span>
-    </div>
-    <span class="stat-label">Clientes que confían en nosotros</span>
-    <span class="stat-divider"></span>
-    <span class="stat-rating"><i data-lucide="star" class="star-icon"></i>4.8</span>
-  </div>
-  </div><!-- /.hero-top -->
-
-  <!-- Bottom 3 images -->
-  <div class="hero-bottom">
-    <div class="hero-photo hero-photo--left animate-photo-reveal delay-700">
-      <img src="img/IMG_7838.JPG " alt="Niña abrazando a su perro">
-      <div class="photo-overlay photo-overlay--left animate-scale-in delay-1000">
-        <div class="stat-avatars">
-          <span class="mini-avatar" style="--c:#F2B5A0">SM</span>
-          <span class="mini-avatar" style="--c:#A0D8B3">JR</span>
-          <span class="mini-avatar mini-avatar--plus"><i data-lucide="plus"></i></span>
-        </div>
-        <span class="stat-number">Familias felices</span>
-      </div>
-    </div>
-
-    <div class="hero-photo hero-photo--center animate-photo-reveal delay-600">
-      <img src="img/CACHORRO-BEAGLE.jpg" alt="Motosierra ECHO en uso">
-      <div class="photo-overlay photo-overlay--center animate-scale-in delay-1100">
-        <h2 class="overlay-heading">Mascotas felices, fincas productivas</h2>
-        <a href="#shop" class="btn btn--pill">Ver tienda <i data-lucide="arrow-right"></i></a>
-      </div>
-    </div>
-
-    <div class="hero-photo hero-photo--right animate-photo-reveal delay-800">
-      <img src="https://place.dog/500/700?id=103" alt="Perro feliz — foto genérica de referencia">
-      <div class="photo-overlay photo-overlay--right animate-scale-in delay-1200">
-        <i data-lucide="star" class="star-icon star-icon--filled"></i>
-        <span class="stat-number">4.8</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-</div><!-- /.viewport-shell -->
-
-<!-- paw trail divider -->
-<div class="paw-trail" data-reveal></div>
-
-<!-- ============ SHOP BY CATEGORY ============ -->
-<section class="section shop-by-pet" id="categorias">
-  <div class="container">
-    <span class="eyebrow" data-reveal>Nuestras categorías</span>
-    <h2 class="section-heading" data-reveal>Encuentra lo que necesitas</h2>
-    <p class="section-copy" data-reveal>Desde el consentido de la casa hasta el equipo para el cafetal: en Animalia lo encontrás todo bajo un mismo techo.</p>
-
-    <div class="pet-grid">
-      <a href="#shop" class="pet-card" data-reveal>
-        <span class="pet-card-badge" style="--badge:#1a3d1a">
-          <svg viewBox="0 0 48 48" class="pet-icon"><path d="M14 20c3 0 5-3 5-6s-2-6-5-6-5 3-5 6 2 6 5 6zm20 0c3 0 5-3 5-6s-2-6-5-6-5 3-5 6 2 6 5 6zM8 30c2.5 0 4.5-2.5 4.5-5.5S10.5 19 8 19s-4.5 2.5-4.5 5.5S5.5 30 8 30zm32 0c2.5 0 4.5-2.5 4.5-5.5S42.5 19 40 19s-4.5 2.5-4.5 5.5S37.5 30 40 30zM24 22c-6 0-13 5.5-13 12.5S16.5 42 24 42s13-3 13-7.5S30 22 24 22z"/></svg>
-        </span>
-        <span class="pet-card-name">Perros</span>
-        <span class="pet-card-count">Alimento y accesorios</span>
-      </a>
-
-      <a href="#shop" class="pet-card" data-reveal>
-        <span class="pet-card-badge" style="--badge:#E86A10">
-          <svg viewBox="0 0 48 48" class="pet-icon"><path d="M13 8 8 18l8 3v3l-4 4v6l4-2 4 4h8l4-4 4 2v-6l-4-4v-3l8-3-5-10-9 5h-4l-9-5zm11 15c-6 0-11 4-11 9s5 8 11 8 11-3 11-8-5-9-11-9z"/></svg>
-        </span>
-        <span class="pet-card-name">Gatos</span>
+      <body class="text-ink">
         <span class="pet-card-count">Alimento y accesorios</span>
       </a>
 
@@ -458,126 +341,12 @@
           <i data-lucide="chevron-down"></i>
         </button>
         <div class="faq-answer">
-          <p>Coordinamos entregas según la zona. Escríbenos para confirmar si hacemos envíos a tu ubicación.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+          <!-- WhatsApp floating button -->
+          <a href="https://wa.me/50400000000" target="_blank" aria-label="Escríbenos por WhatsApp"
+             class="fixed bottom-6 right-6 z-40 bg-[#25D366] text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center hover:scale-110 active:scale-90 transition-transform">
+            <span class="material-symbols-outlined text-2xl fill-icon">chat</span>
+          </a>
 
-<div class="paw-trail" data-reveal></div>
-
-<!-- ============ TESTIMONIALS ============ -->
-<section class="section testimonials">
-  <div class="container">
-    <span class="eyebrow" data-reveal>Clientes que confían en Animalia</span>
-    <h2 class="section-heading" data-reveal>Mascotas y fincas contentas</h2>
-
-    <div class="testimonial-grid">
-      <div class="testimonial-card" data-reveal>
-        <div class="stars">
-          <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-        </div>
-        <p class="testimonial-quote">Llevo a mi perro a cortarse el pelo cada mes y siempre queda impecable. Excelente trato.</p>
-        <div class="testimonial-author">
-          <span class="mini-avatar" style="--c:#F2B5A0">SM</span>
-          <div>
-            <p class="author-name">Sofía M.</p>
-            <p class="author-pet">Mamá de mascota, Tegucigalpa</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card" data-reveal>
-        <div class="stars">
-          <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-        </div>
-        <p class="testimonial-quote">Compré mi fumigadora ahí y me asesoraron bien sobre el mantenimiento. Se nota que conocen el equipo.</p>
-        <div class="testimonial-author">
-          <span class="mini-avatar" style="--c:#A0D8B3">JR</span>
-          <div>
-            <p class="author-name">Javier R.</p>
-            <p class="author-pet">Productor de café, San Pedro Sula</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card" data-reveal>
-        <div class="stars">
-          <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-        </div>
-        <p class="testimonial-quote">Encontré repuestos originales para mi motosierra que en otros lados no había. Buenos precios.</p>
-        <div class="testimonial-author">
-          <span class="mini-avatar" style="--c:#F6D186">TK</span>
-          <div>
-            <p class="author-name">Tatiana K.</p>
-            <p class="author-pet">Cliente frecuente, Comayagua</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ NEWSLETTER ============ -->
-<section class="section newsletter" id="contacto">
-  <div class="container newsletter-inner">
-    <div>
-      <h2 class="section-heading section-heading--light" data-reveal>Recibe novedades y promociones</h2>
-      <p class="section-copy section-copy--light" data-reveal>Nuevos productos, consejos de cuidado y ofertas — sin saturar tu correo.</p>
-    </div>
-    <form class="newsletter-form" id="newsletterForm" data-reveal>
-      <label for="newsletterEmail" class="sr-only">Correo electrónico</label>
-      <input type="email" id="newsletterEmail" placeholder="tucorreo@email.com" required>
-      <button type="submit" class="btn btn--primary">
-        Suscribirme <i data-lucide="mail"></i>
-      </button>
-    </form>
-    <p class="newsletter-note" id="newsletterNote" aria-live="polite"></p>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <img src="img/logo-animalia.png" alt="Agroveterinaria Animalia" class="footer-logo">
-      <p>Agroveterinaria Animalia — todo para el cuidado de tu mascota y de tu finca.</p>
-      <div class="social-row">
-        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-        <a href="#" aria-label="WhatsApp"><i data-lucide="phone"></i></a>
-      </div>
-    </div>
-
-    <div class="footer-col">
-      <p class="footer-col-title">Tienda</p>
-      <a href="#shop">Mascotas</a>
-      <a href="#shop">Fumigación y jardín</a>
-      <a href="#shop">Motosierras y poda</a>
-      <a href="#shop">Repuestos</a>
-    </div>
-
-    <div class="footer-col">
-      <p class="footer-col-title">Servicios</p>
-      <a href="#citas">Citas de corte</a>
-      <a href="#faq">Preguntas frecuentes</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-
-    <div class="footer-col">
-      <p class="footer-col-title">Ayuda</p>
-      <a href="#contacto">Escríbenos</a>
-      <a href="#faq">Horarios</a>
-      <a href="#faq">Ubicación</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Agroveterinaria Animalia. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-<script src="script.js"></script>
-</body>
-</html>
+          <script src="script.js" defer></script>
+          </body>
+          </html>
